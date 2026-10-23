@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los 3 Volcanes Principales de México</title>
+    <style>
+        :root {
+            --primary-color: #b33939;
+            --secondary-color: #2c3e50;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://upload.wikimedia.org/wikipedia/commons/ thumb/8/87/Popocat%C3%A9petl_and_Iztacc%C3%ADhuatl.jpg/1200px-Popocat%C3%A9petl_and_Iztacc%C3%ADhuatl.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .section-box {
+            background-color: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .grid-volcanes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-50px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Los 3 Grandes Volcanes de México</h1>
+        <p>Un recorrido educativo e informativo sobre el Pico de Orizaba, el Popocatépetl y el Volcán de Colima.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- INTRODUCCIÓN -->
+        <div class="section-box">
+            <h2>Introducción: La Tierra Volcánica de México</h2>
+            <p>
+                México forma parte del cinturón tectónico conocido como el <strong>Cinturón de Fuego del Pacífico</strong>. 
+                De acuerdo con la información del <em>Servicio Geológico Mexicano (SGM)</em>, la geografía de nuestro país se encuentra cruzada por la <strong>Faja Volcánica Transmexicana</strong>, una gran cadena volcánica de más de 900 km de longitud que alberga a miles de estructuras y conos volcánicos.
+            </p>
+            <p>
+                A lo largo de la historia de México, estos colosos de la naturaleza han moldeado el paisaje, generado suelos sumamente fértiles para la agricultura y constituido fuentes clave de energía geotérmica y recursos minerales.
+            </p>
+        </div>
+
+        <!-- ¿POR QUÉ OCURREN Y CÁDA CUÁNTO? -->
+        <div class="section-box">
+            <h2>¿Por qué ocurren las erupciones y cada cuánto?</h2>
+            <p>
+                <strong>¿A qué se deben las erupciones?</strong><br>
+                En el suroeste de México, la <em>Placa de Cocos</em> choca constantemente y se desliza por debajo de la <em>Placa Norteamericana</em> (proceso llamado <strong>subducción</strong>). Este choque genera presiones extremas y funde la roca a decenas de kilómetros bajo tierra. Este material líquido (magma) acumula gases, pierde densidad y asciende a la superficie por las grietas terrestres, provocando una erupción.
+            </p>
+            <p>
+                <strong>¿Cada cuánto hay erupciones?</strong><br>
+                La frecuencia varía según el estado de actividad del volcán:
+            </p>
+            <ul>
+                <li><strong>Erupción continua/frecuente (A diario o por meses):</strong> El Popocatépetl se mantiene liberando vapor, ceniza y fragmentos incandescentes casi de forma diaria o semanal en sus ciclos activos.</li>
+                <li><strong>Ciclos de décadas (Cada 10 a 30 años):</strong> Volcanes altamente activos como el de Colima suelen registrar fases explosivas fuertes o derrames de lava significativos cada pocos años o décadas.</li>
+                <li><strong>Ciclos de siglos/milenios:</strong> Volcanes durmientes como el Pico de Orizaba permanecen tranquilos durante siglos antes de registrar un evento eruptivo de gran magnitud (su última erupción mayor ocurrió en el siglo XIX).</li>
+            </ul>
+        </div>
+
+        <!-- TARJETAS DE CADA VOLCÁN -->
+        <h2>Los 3 Colosos en Detalle</h2>
+        <div class="grid-volcanes">
+
+            <!-- PICO DE ORIZABA -->
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Citlaltepetl.jpg/800px-Citlaltepetl.jpg" alt="Pico de Orizaba">
+                <div class="card-content">
+                    <h3>Pico de Orizaba (Citlaltépetl)</h3>
+                    <span class="badge">Nivel de Riesgo: Medio / Durmiente</span>
+                    <p><strong>Ubicación:</strong> Entre los límites de Veracruz y Puebla.</p>
+                    <p><strong>Tamaño:</strong> 5,636 msnm. <br><em>Punto de comparación:</em> Es el volcán más alto de México y la tercera montaña más alta de toda Norteamérica. Supera por más de 1.8 km al volcán Colima.</p>
+                    <p><strong>Peligrosidad:</strong> Actualmente se encuentra en reposo (durmiente), pero una erupción severa podría derretir sus glaciares, generando <em>lahares</em> (flujos destructivos de lodo y roca) a gran velocidad hacia las poblaciones colindantes.</p>
+                </div>
+            </div>
+
+            <!-- POPOCATÉPETL -->
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Popocatepetl_dusk.jpg/800px-Popocatepetl_dusk.jpg" alt="Volcán Popocatépetl">
+                <div class="card-content">
+                    <h3>Popocatépetl ("Don Goyo")</h3>
+                    <span class="badge">Nivel de Riesgo: Muy Alto / Muy Activo</span>
+                    <p><strong>Ubicación:</strong> Límites del Estado de México, Puebla y Morelos.</p>
+                    <p><strong>Tamaño:</strong> 5,420 msnm. <br><em>Punto de comparación:</em> Es la segunda montaña más alta de México. Su cráter mide unos 800 metros de ancho, espacio suficiente para albergar la cancha del Estadio Azteca entera repetidas veces.</p>
+                    <p><strong>Peligrosidad:</strong> Extremadamente alta. Más de 25 millones de personas viven a menos de 100 km de distancia. Emite constantemente ceniza, lluvia de pómez, gases tóxicos y flujos piroclásticos.</p>
+                </div>
+            </div>
+
+            <!-- VOLCÁN DE COLIMA -->
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Volcan_de_Colima_2015.jpg/800px-Volcan_de_Colima_2015.jpg" alt="Volcán de Colima">
+                <div class="card-content">
+                    <h3>Volcán de Colima (Volcán de Fuego)</h3>
+                    <span class="badge">Nivel de Riesgo: Muy Alto / Explosivo</span>
+                    <p><strong>Ubicación:</strong> Limites entre Colima y Jalisco.</p>
+                    <p><strong>Tamaño:</strong> 3,860 msnm. <br><em>Punto de comparación:</em> Aunque es el más bajo de los tres (casi 1,800 metros más bajo que el Pico de Orizaba), es considerado uno de los más destructivos por su dinámica.</p>
+                    <p><strong>Peligrosidad:</strong> Históricamente es el volcán más activo y explosivo de México (ha tenido más de 40 erupciones registradas desde 1576). Genera derrames de lava, avalanchas de bloques incandescentes y columnas explosivas de ceniza.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Proyecto 3 Volcanes | Fuentes de consulta: Servicio Geológico Mexicano (SGM) & CENAPRED</p>
+    </footer>
+
+</body>
+</html>
